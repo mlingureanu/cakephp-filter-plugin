@@ -419,7 +419,7 @@ class FilteredBehavior extends Behavior
                 }
                 break;
             default:
-                if (strlen(trim(strval($value))) == 0) {
+                if (is_array($value) || strlen(trim(strval($value))) == 0) {
                     break;
                 }
 
